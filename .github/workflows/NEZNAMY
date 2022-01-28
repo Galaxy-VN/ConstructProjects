@@ -9,7 +9,7 @@ on:
     - cron: '0 0 * * *'
 
 jobs:
-  AACAdditionPro:
+  TAB:
     uses: HSGamer/ConstructProjects/.github/workflows/maven-build.yml@main
     with:
       repository: "NEZNAMY/TAB"
