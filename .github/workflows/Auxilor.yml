@@ -9,6 +9,27 @@ on:
     - cron: '0 */6 * * *'
 
 jobs:
+  EcoJobs:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoJobs"
+      target: "bin/*"
+      name: "EcoJobs"
+      java: 17
+  EcoPets:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoPets"
+      target: "bin/*"
+      name: "EcoPets"
+      java: 17
+  EcoCrates:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/EcoCrates"
+      target: "bin/*"
+      name: "EcoCrates"
+      java: 17
   EcoBosses:
     uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
     with:
@@ -72,3 +93,17 @@ jobs:
     with:
       repository: "Auxilor/libreforge"
       name: "libreforge"
+  Boosters:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/Boosters"
+      target: "bin/*"
+      name: "Boosters"
+      java: 17
+  Actions:
+    uses: HSGamer/ConstructProjects/.github/workflows/gradle-build.yml@main
+    with:
+      repository: "Auxilor/Actions"
+      target: "bin/*"
+      name: "Actions"
+      java: 17
